@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+}
+
+@media (min-width: 640px) {
+  :root {
+  --background: #ffffff;
+  --foreground: #171717;
+  }
+}
+
+@media (min-width: 786px) {
+  :root {
+  --background: #ffffff;
+  --foreground: #171717;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+  --background: #ffffff;
+  --foreground: #171717;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --background: #ffffff;
+  --foreground: #171717;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  border: 2px solid rgb(255, 255, 255) !important;  
+  background: transparent !important;  /*hollow circle*/
+  opacity: 0.5 !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 35% !important;
+  background: white !important;
+  opacity: 1 !important;
+}
+
+@media (min-width: 640px) {
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+  .swiper-pagination-bullet-active {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+  }
+  .swiper-pagination-bullet-active {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+  }
+  .swiper-pagination-bullet-active {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* styles/global.css */
+
+/* Hide Swiper's default arrow character */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+/* Style the button container */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px !important;
+  height: 40px !important;
+  background-color: rgb(45, 0, 0);
+  border-radius: 100% !important;
+  opacity: 0.5 !important;
+  transition: all 0.3s ease;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Add custom SVG as background */
+.swiper-button-next {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23FFD700' viewBox='0 0 24 24'><path d='M6 4l12 8-12 8z'/></svg>");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.swiper-button-prev {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23FFD700' viewBox='0 0 24 24'><path d='M18 4l-12 8 12 8z'/></svg>");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .swiper-button-next {
+    opacity: 0.7;
+  }
+  .swiper-button-prev {
+    opacity: 0.7;
+  }
+}
+
+/* Hover effects */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1 !important;
+  transform: scale(1.1);
+}
