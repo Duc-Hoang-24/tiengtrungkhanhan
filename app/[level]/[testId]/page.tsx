@@ -164,7 +164,7 @@ export default function TestPage({ params }: { params: Promise<TestParams> }) {
   useEffect(() => {
     const loadTestData = async () => {
       try {
-        const res = await fetch(`${baseUrl}/data/${level}/${testId}.csv?v=${Date.now()}`);
+        const res = await fetch(`${baseUrl}/data/${level}/${testId}.csv?v=${Date.now()}`, { cache: 'no-store' });
         if (!res.ok) throw new Error('Failed to load test data');
         const csvText = await res.text();
         const parsed = parseCSV(csvText);
@@ -210,7 +210,7 @@ export default function TestPage({ params }: { params: Promise<TestParams> }) {
     };
 
     loadTestData();
-  }, [level, testId]);
+  }, [level, testId, baseUrl]);
 
   if (loading) {
     return (
@@ -903,3 +903,4 @@ export default function TestPage({ params }: { params: Promise<TestParams> }) {
   );
 
 }
+
