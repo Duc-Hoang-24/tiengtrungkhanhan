@@ -101,7 +101,7 @@ export default function Home() {
           <div 
             className='w-full max-w-7xl mx-auto mt-6 md:mt-8 rounded-lg overflow-x-auto'
           >
-            <div className='hidden md:grid grid-cols-5 divide-x-2 bg-amber-100 min-w-[600px]'>
+            <div className='hidden md:grid grid-cols-4 divide-x-2 bg-amber-100 min-w-[600px]'>
               <div className='flex items-center justify-center flex-col space-y-2 p-4'>
                 <h3 
                   className='font-bold text-lg md:text-xl lg:text-2xl text-black border-amber-700 border-l-4 border-t-4 flex items-center justify-center w-full p-2 mb-0.5 bg-amber-500 rounded-lg'
@@ -146,7 +146,7 @@ export default function Home() {
           </div>
         </div>
         {/* Lịch khai giảng cho mobile */}
-        <div className='grid md:hidden grid-cols-4 max-w-md h-auto rounded-lg -mt-15 mx-4 bg-amber-100'>
+        <div className='grid md:hidden grid-cols-3 max-w-md h-auto rounded-lg -mt-15 mx-4 bg-amber-100'>
             <div className='flex items-center justify-center flex-col space-y-2'>
                   <h3 className='text-black w-full font-bold text-lg border-amber-700 border-l-4 border-t-4 flex items-center justify-center bg-amber-500 rounded-lg'>
                     Lớp Học
