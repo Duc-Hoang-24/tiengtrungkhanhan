@@ -48,20 +48,8 @@ const khoa11 = () => {
             🎉 Ưu đãi học phí đặc biệt
           </h3>
           <p className='text-black'>
-            _ Học phí: 260.000đ/buổi (90 phút).
+            _ Học phí: 300.000đ/buổi (90 phút).
           </p>
-
-          <h4 className='text-lg sm:text-xl font-bold text-black'>
-            Ưu đãi khi đăng ký gói học:
-          </h4>
-          <p className='text-black'>
-            _ Đăng ký trọn gói 30 buổi → Tặng ngay 2 buổi học miễn phí.<br/>
-            _ Đăng ký trọn gói 50 buổi → Tặng ngay 5 buổi học miễn phí.
-          </p>
-
-          <h3 className='text-xl sm:text-2xl font-bold text-black'>
-            👉 Càng đăng ký nhiều buổi, càng tiết kiệm chi phí và nhận thêm nhiều giá trị học tập!
-          </h3>
         </div>
 
         {/* CTA Button */}
@@ -86,5 +74,6 @@ const khoa11 = () => {
     </div>
   )
 }
+
 
 export default khoa11
