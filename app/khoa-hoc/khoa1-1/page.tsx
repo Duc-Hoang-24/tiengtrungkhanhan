@@ -47,9 +47,6 @@ const khoa11 = () => {
           <h3 className='text-xl sm:text-2xl font-bold text-black'>
             🎉 Ưu đãi học phí đặc biệt
           </h3>
-          <p className='text-black'>
-            _ Học phí: 300.000đ/buổi (90 phút).
-          </p>
         </div>
 
         {/* CTA Button */}
@@ -77,3 +74,4 @@ const khoa11 = () => {
 
 
 export default khoa11
+
