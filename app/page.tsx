@@ -109,8 +109,8 @@ export default function Home() {
                   Lớp Học
                 </h3>
                 <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full border-b-2 border-t-2 flex items-center justify-center text-center py-6'>HSK1</p>
-                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full border-b-2 flex items-center justify-center text-center py-6'>HSK2</p>
-                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full flex items-center justify-center text-center p-5'>HSK3</p>
+                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full border-b-2 flex items-center justify-center text-center py-6'>HSK1</p>
+                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full flex items-center justify-center text-center p-5'>HSK2</p>
               </div>  
               <div className='flex items-center justify-center flex-col space-y-2 p-4'>
                 <h3 
@@ -119,8 +119,8 @@ export default function Home() {
                   Khai Giảng
                 </h3>
                 <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full border-b-2 border-t-2 flex items-center justify-center text-center py-6'>2/3</p>
-                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full border-b-2 flex items-center justify-center text-center py-6'>2/2</p>
-                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full flex items-center justify-center text-center p-5'>27/1</p>
+                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full border-b-2 flex items-center justify-center text-center py-6'>3/3</p>
+                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full flex items-center justify-center text-center p-5'>2/3</p>
               </div>
               <div className='flex items-center justify-center flex-col space-y-2 p-4'>
                 <h3 
@@ -128,9 +128,9 @@ export default function Home() {
                 >
                   Lịch Học
                 </h3>
-                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full border-b-2 border-t-2 flex items-center justify-center text-center p-2'>Thứ 2 - 4 - 6 <br/>(tổng số buổi: 18)</p>
-                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full border-b-2 flex items-center justify-center text-center p-2'>Thứ 2 - 4 - 6 <br/>(tổng số buổi: 17)</p>
-                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full flex items-center justify-center text-center pb-2'>Thứ 3 - 5 - 7 <br/>(tổng số buổi: 25)</p>
+                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full border-b-2 border-t-2 flex items-center justify-center text-center p-2'>Thứ 2 - 4 - 6</p>
+                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full border-b-2 flex items-center justify-center text-center p-2'>Thứ 3 - 5 - 7</p>
+                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full flex items-center justify-center text-center pb-2'>Thứ 2 - 4 - 6</p>
               </div>
               <div className='flex items-center justify-center flex-col space-y-2 p-4'>
                 <h3 
@@ -139,8 +139,8 @@ export default function Home() {
                   Giờ Học
                 </h3>
                 <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full border-b-2 border-t-2 flex items-center justify-center text-center py-6'>19h - 20h30</p>
-                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full border-b-2 flex items-center justify-center text-center py-6'>20h30 - 22h</p>
-                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full flex items-center justify-center text-center p-5'>19h - 20h30</p>
+                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full border-b-2 flex items-center justify-center text-center py-6'>19h - 20h30</p>
+                <p className='text-black font-bold text-base sm:text-xs md:text-lg lg:text-2xl w-full flex items-center justify-center text-center p-5'>20h30 - 22h</p>
               </div>
             </div>
           </div>
@@ -164,19 +164,19 @@ export default function Home() {
             <div className='flex items-center justify-center flex-col space-y-2 py-1'>
                 <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-b-1 border-r-1'>HSK1</p>
                 <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-b-1 border-r-1'>2/3</p>
-                <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-b-1 border-r-1'>Thứ 2 - 4 - 6 <br/>(tổng số buổi: 18)</p>
+                <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-b-1 border-r-1'>Thứ 2 - 4 - 6</p>
                 <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-r-1 border-b-1'>19h - 20h30</p>
             </div>
             <div className='flex items-center justify-center flex-col space-y-2 py-1'>
                 <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-b-1 border-r-1'>HSK2</p>
-                <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-b-1 border-r-1'>2/2</p>
-                <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-b-1 border-r-1'>Thứ 2 - 4 - 6 <br/>(tổng số buổi: 17)</p>
+                <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-b-1 border-r-1'>2/3</p>
+                <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-b-1 border-r-1'>Thứ 2 - 4 - 6</p>
                 <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-b-1 border-r-1'>20h30 - 22h</p>
             </div>
             <div className='flex items-center justify-center flex-col space-y-2 py-1'>
-                <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-b-1'>HSK3</p>
-                <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-b-1'>27/1</p>
-                <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-b-1'>Thứ 3 - 5 - 7 <br/>(tổng số buổi: 25)</p>
+                <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-b-1'>HSK1</p>
+                <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-b-1'>3/3</p>
+                <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-b-1'>Thứ 3 - 5 - 7</p>
                 <p className='text-black flex-1 font-bold text-xs w-full flex items-center justify-center text-center border-b-1'>19h - 20h30</p>
             </div>
           </div>
