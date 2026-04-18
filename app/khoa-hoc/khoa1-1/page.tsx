@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import AutoplayVideo from '../video_khoa1-1/video1-1';
+import Image from 'next/image';
 
 const baseUrl = process.env.NEXT_PUBLIC_ASSET_TEST_URL;
 
@@ -9,7 +10,7 @@ const khoa11 = () => {
     <div className='max-w-6xl mx-auto p-4 sm:p-6'>
       <div className='space-y-6'>
         {/* Image */}
-        <img 
+        <Image 
           src={`${baseUrl}/books/khoa1.png`} 
           alt='Khóa 1-1' 
           className='w-full h-auto rounded-xl border-2 border-amber-500 lg:w-full lg:h-120'

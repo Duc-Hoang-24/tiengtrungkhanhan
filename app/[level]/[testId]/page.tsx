@@ -2,6 +2,7 @@
 
 import { useState, useEffect, use, useRef } from 'react';
 import { parseCSV } from '@/utils/csvParser';
+import Image from 'next/image';
 
 type TestParams = {
   level: string;
@@ -329,7 +330,7 @@ export default function TestPage({ params }: { params: Promise<TestParams> }) {
             : 'bg-amber-950' 
         }`}>
         <div className="flex items-center">
-          <img src={`${baseUrl}/images/logo.png`} alt="Logo" className="w-auto h-8 mr-2" />
+          <Image src={`${baseUrl}/images/logo.png`} alt="Logo" className="w-auto h-8 mr-2" />
           <span className="hidden md:flex md:text-lg lg:text-xl text-yellow-200 font-bold">
             Tiếng Trung Khánh An
           </span>
@@ -507,7 +508,7 @@ export default function TestPage({ params }: { params: Promise<TestParams> }) {
                                     {group.image ? (
                                       // Show image if it exists
                                       <div className="flex justify-center my-4">
-                                        <img
+                                        <Image
                                           src={`${baseUrl}/photos/image-${level}/${group.image}?v=${testId}`}
                                           alt={`Visual for ${group.prompt}`}
                                           className="max-w-full max-h-[400px] w-auto h-auto object-contain border rounded"
@@ -796,7 +797,7 @@ export default function TestPage({ params }: { params: Promise<TestParams> }) {
                         {/* Right column: image (if any) */}
                         {group.image && !group.isSharedFillIn && (
                           <div className="flex justify-center">
-                            <img
+                            <Image
                               src={`${baseUrl}/photos/image-${level}/${group.image}?v=${testId}`}
                               alt={`Visual for ${group.prompt}`}
                               className="max-w-full max-h-[400px] w-auto h-auto object-contain border rounded"

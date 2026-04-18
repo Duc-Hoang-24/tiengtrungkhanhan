@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 type MenuItem = {
   label: string;
@@ -54,12 +55,12 @@ export default function Navbar() {
   return (
     <>
       <div className="md:hidden flex flex-row left-20 rounded-lg px-4 -top-0.5">
-        <img src={`${baseUrl}/images/logo.png`} alt="Logo" className="w-auto h-8 my-2 mr-1"/>
+        <Image src={`${baseUrl}/images/logo.png`} alt="Logo" className="w-auto h-8 my-2 mr-1"/>
         <span className="text-md font-stretch-condensed font-bold mt-3">Tiếng Trung Khánh An</span>
       </div>
     <nav className='bg-amber-950 text-yellow-200 px-2 md:px-6 py-1 md:py-4 relative z-50'>
       <div className="hidden md:flex absolute flex-row md:left-5 lg:left-20 rounded-lg px-4 -top-0.5">
-        <img src={`${baseUrl}/images/logo.png`} alt="Logo" className="w-auto h-8 md:h-10 my-2 mr-2"/>
+        <Image src={`${baseUrl}/images/logo.png`} alt="Logo" className="w-auto h-8 md:h-10 my-2 mr-2"/>
         <span className="md:text-lg lg:text-xl font-stretch-condensed font-bold mt-4">Tiếng Trung Khánh An</span>
       </div>
       <ul className="flex flex-wrap justify-center gap-x-2 sm:gap-x-6 md:gap-x-8 lg:gap-x-24 xl:gap-x-36 font-bold">
