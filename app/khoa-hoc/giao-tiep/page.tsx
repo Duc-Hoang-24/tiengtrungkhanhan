@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import Image from 'next/image';
 
 const baseUrl = process.env.NEXT_PUBLIC_ASSET_TEST_URL;
 
@@ -9,7 +8,7 @@ const giaotiep = () => {
     <div className='flex flex-col items-center justify-center p-4 sm:p-6'>
       {/* Sơ Cấp 1 */}
       <div className='w-full max-w-5xl flex flex-col sm:flex-row items-center gap-6 mt-10 p-4 bg-white rounded-xl shadow-md'>
-        <Image 
+        <img 
           src={`${baseUrl}/books/socap1.png`} 
           alt='Sơ Cấp 1' 
           className='w-full sm:w-1/3 h-auto object-contain'
@@ -57,7 +56,7 @@ const giaotiep = () => {
 
       {/* Sơ Cấp 2 */}
       <div className='w-full max-w-5xl flex flex-col sm:flex-row-reverse items-center gap-6 mt-16 p-4 bg-white rounded-xl shadow-md'>
-        <Image 
+        <img 
           src={`${baseUrl}/books/socap2.png`} 
           alt='Sơ Cấp 2' 
           className='w-full sm:w-1/3 h-auto object-contain'

@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
-import Image from "next/image";
 
 const baseUrl = process.env.NEXT_PUBLIC_ASSET_TEST_URL;
 
@@ -53,7 +52,7 @@ export default function GallerySlider() {
       >
         {images.map((img, index) => (
           <SwiperSlide key={index}>
-            <Image
+            <img
               src={img}
               alt={`Cảm nhận học viên ${index + 1}`}
               className="rounded-lg shadow-md w-full h-auto object-cover transition hover:scale-105 duration-300"

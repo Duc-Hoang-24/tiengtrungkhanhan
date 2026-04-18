@@ -45,8 +45,8 @@ body {
 }
 
 .swiper-pagination-bullet {
-  width: 10px !important;
-  height: 10px !important;
+  width: 8px !important;
+  height: 8px !important;
   border: 2px solid rgb(255, 255, 255) !important;  
   background: transparent !important;  /*hollow circle*/
   opacity: 0.5 !important;
@@ -55,44 +55,11 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-  width: 12px !important;
-  height: 12px !important;
+  width: 10px !important;
+  height: 10px !important;
   border-radius: 35% !important;
   background: white !important;
   opacity: 1 !important;
-}
-
-@media (min-width: 640px) {
-  .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-  }
-  .swiper-pagination-bullet-active {
-    width: 14px;
-    height: 14px;
-  }
-}
-
-@media (min-width: 768px) {
-  .swiper-pagination-bullet {
-    width: 15px;
-    height: 15px;
-  }
-  .swiper-pagination-bullet-active {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
-  }
-  .swiper-pagination-bullet-active {
-    width: 25px;
-    height: 25px;
-  }
 }
 
 @layer base {
@@ -104,9 +71,10 @@ body {
 /* styles/global.css */
 
 /* Hide Swiper's default arrow character */
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  display: none;
+.swiper-button-next::before,
+.swiper-button-prev::before {
+  display: none !important;
+  opacity: 0 !important;
 }
 
 /* Style the button container */
@@ -116,7 +84,6 @@ body {
   height: 40px !important;
   background-color: rgb(45, 0, 0);
   border-radius: 100% !important;
-  opacity: 0.5 !important;
   transition: all 0.3s ease;
   display: flex !important;
   align-items: center !important;

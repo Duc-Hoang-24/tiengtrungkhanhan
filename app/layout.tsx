@@ -45,7 +45,7 @@ export default function RootLayout({
           <Socialicon href="https://www.facebook.com/messages/t/111525371864793" type="messeger"/>
           <Socialicon href="mailto:joycelovemandarin@gmail.com" type="mail"/>
         </div>
-          <GoogleAnalytics gaId="G-8B7BFCCMW7" />
+          <GoogleAnalytics gaId="G-35L1QM307T" />
         </body>
     </html>
   );

@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import Image from 'next/image';
 
 const baseUrl = process.env.NEXT_PUBLIC_ASSET_TEST_URL;
 
@@ -9,7 +8,7 @@ const hsk = () => {
     <div className='flex flex-col items-center justify-center p-4 sm:p-6 space-y-12'>
       {/* HSK 1-3 */}
       <div className='w-full max-w-5xl flex flex-col sm:flex-row items-center gap-6 p-3 bg-white rounded-xl shadow-md'>
-        <Image 
+        <img 
           src={`${baseUrl}/books/hsk123.png`} 
           alt='HSK 1-3' 
           className='w-full sm:w-1/3 h-auto object-contain'
@@ -61,7 +60,7 @@ const hsk = () => {
 
       {/* HSK 4 */}
       <div className='w-full max-w-5xl flex flex-col sm:flex-row-reverse items-center gap-6 p-3 bg-white rounded-xl shadow-md'>
-        <Image 
+        <img 
           src={`${baseUrl}/books/hsk4.png`} 
           alt='HSK 4' 
           className='w-full sm:w-1/3 h-auto object-contain'
@@ -112,7 +111,7 @@ const hsk = () => {
 
       {/* HSK 5 */}
       <div className='w-full max-w-5xl flex flex-col sm:flex-row items-center gap-6 p-3 bg-white rounded-xl shadow-md'>
-        <Image 
+        <img 
           src={`${baseUrl}/books/hsk5.png`} 
           alt='HSK 5' 
           className='w-full sm:w-1/3 h-auto object-contain'
