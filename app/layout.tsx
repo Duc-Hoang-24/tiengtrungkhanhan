@@ -4,6 +4,7 @@ import "./globals.css";
 import Socialicon from "./components/Socialicons";
 import NavbarWrapper from "./NavbarWrapper";
 import FooterWrapper from "./FooterWrapper";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,6 +45,7 @@ export default function RootLayout({
           <Socialicon href="https://www.facebook.com/messages/t/111525371864793" type="messeger"/>
           <Socialicon href="mailto:joycelovemandarin@gmail.com" type="mail"/>
         </div>
+          <GoogleAnalytics gaId="G-8B7BFCCMW7" />
         </body>
     </html>
   );
