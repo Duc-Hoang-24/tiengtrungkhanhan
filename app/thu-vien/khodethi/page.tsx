@@ -24,7 +24,11 @@ const levelToTestIds: Record<string, string[]> = {
 };
 
 const levels = Object.keys(levelToTestIds);
+function getBaseUrl() {
 const baseUrl = process.env.NEXT_PUBLIC_ASSET_TEST_URL;
+if (!baseUrl) console.error('NEXT_PUBLIC_ASSET_TEST_URL is not defined');
+return baseUrl?.replace(/\/+$/, '') ?? ''; // Remove trailing slash if exists
+}
 
 export default function KhodethiPage() {
   const [selectedLevel, setSelectedLevel] = useState<string | null>(null);
@@ -51,7 +55,7 @@ export default function KhodethiPage() {
 
         // Check listening
         try {
-          const resListening = await fetch(`${baseUrl}/data/${level}/${testId}-listening.csv`);
+          const resListening = await fetch(`${getBaseUrl()}/data/${level}/${testId}-listening.csv`);
           if (resListening.ok) {
             const csvText = await resListening.text();
             const parsed = parseCSV(csvText);
@@ -66,7 +70,7 @@ export default function KhodethiPage() {
 
         // Check reading
         try {
-          const resReading = await fetch(`${baseUrl}/data/${level}/${testId}-reading.csv`);
+          const resReading = await fetch(`${getBaseUrl()}/data/${level}/${testId}-reading.csv`);
           if (resReading.ok) {
             const csvText = await resReading.text();
             const parsed = parseCSV(csvText);
@@ -81,7 +85,7 @@ export default function KhodethiPage() {
 
         // Check writing
         try {
-          const resWriting = await fetch(`${baseUrl}/data/${level}/${testId}-writing.csv`);
+          const resWriting = await fetch(`${getBaseUrl()}/data/${level}/${testId}-writing.csv`);
           if (resWriting.ok) {
             const csvText = await resWriting.text();
             const parsed = parseCSV(csvText);
@@ -130,7 +134,7 @@ export default function KhodethiPage() {
 
           // Check listening
           try {
-            const resListening = await fetch(`${baseUrl}/data/${selectedLevel}/${testId}-listening.csv`);
+            const resListening = await fetch(`${getBaseUrl()}/data/${selectedLevel}/${testId}-listening.csv`);
             if (resListening.ok) {
               const csvText = await resListening.text();
               const parsed = parseCSV(csvText);
@@ -150,7 +154,7 @@ export default function KhodethiPage() {
 
           // Check reading
           try {
-            const resReading = await fetch(`${baseUrl}/data/${selectedLevel}/${testId}-reading.csv`);
+            const resReading = await fetch(`${getBaseUrl()}/data/${selectedLevel}/${testId}-reading.csv`);
             if (resReading.ok) {
               const csvText = await resReading.text();
               const parsed = parseCSV(csvText);
@@ -170,7 +174,7 @@ export default function KhodethiPage() {
 
           // Check writing
           try {
-            const resWriting = await fetch(`${baseUrl}/data/${selectedLevel}/${testId}-writing.csv`);
+            const resWriting = await fetch(`${getBaseUrl()}/data/${selectedLevel}/${testId}-writing.csv`);
             if (resWriting.ok) {
               const csvText = await resWriting.text();
               const parsed = parseCSV(csvText);

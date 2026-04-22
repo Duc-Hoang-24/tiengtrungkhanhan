@@ -3,15 +3,16 @@ import React from "react";
 import { FaFacebook, FaTiktok, FaYoutube } from "react-icons/fa";
 import { SiZalo } from "react-icons/si";
 import Link from "next/link";
+import { Mail, Phone } from 'lucide-react'
 
 const baseUrl = process.env.NEXT_PUBLIC_ASSET_TEST_URL;
 
 export default function Footer() {
     return (
-        <>
+        <div>
         <div className="mx-auto w-3/4 border-t-2 border-dashed border-amber-950 my-4"></div>
         <footer className="bg-amber-950 text-yellow-200 py-8">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="w-3/4 flex items-center justify-between max-w-7xl mx-auto flex-row gap-8">
                 {/* Column 1 - Logo & Socials */}
                 <div className="flex flex-col items-center lg:ml-5">
                     <img 
@@ -63,21 +64,21 @@ export default function Footer() {
                 </div>
 
                 {/* Column 2 - Contact Info */}
-                <div className="flex flex-col items-center lg:items-start lg:col-span-2">
+                <div className="flex flex-col items-center">
                     <h1 className="font-bold text-lg md:text-xl lg:text-2xl mb-3">
                         THÔNG TIN LIÊN HỆ
                     </h1>
                     <div className="space-y-1">
-                        <p className="text-sm md:text-base lg:text-lg">
-                            📧 Email: joycelovemandarin@gmail.com
+                        <p className="text-sm lg:text-lg">
+                            <Mail size={18} className="inline"/> Email: joycelovemandarin@gmail.com
                         </p>
-                        <p className="text-sm md:text-base lg:text-lg">
-                            📞 Hotline: +84 393 384 403
+                        <p className="text-sm lg:text-lg">
+                            <Phone size={18} className="inline"/> Hotline: +84 393 384 403
                         </p>
                     </div>
                 </div>
             </div>
         </footer>
-        </>
+        </div>
     );
 }
