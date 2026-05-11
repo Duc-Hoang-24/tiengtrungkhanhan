@@ -118,7 +118,6 @@ export default function Home() {
                 >
                   Lớp Học
                 </h3>
-                <p className={khai_giang_styles}>HSK1 3.0</p> 
                 <p className={khai_giang_styles}>HSK1 3.0</p>
                 <p className={khai_giang_styles}>HSK2 3.0</p>
                 <p className={khai_giang_styles}>HSK4</p>
@@ -129,10 +128,9 @@ export default function Home() {
                 >
                   Khai Giảng
                 </h3>
-                <p className={khai_giang_styles}>2/6</p>
                 <p className={khai_giang_styles}>15/6</p>
+                <p className={khai_giang_styles}>8/6</p>
                 <p className={khai_giang_styles}>3/6</p>
-                <p className={khai_giang_styles}>1/6</p>
               </div>
               <div className='flex items-center justify-center flex-col space-y-2 p-4'>
                 <h3 
@@ -140,7 +138,6 @@ export default function Home() {
                 >
                   Lịch Học
                 </h3>
-                <p className={khai_giang_styles}>Thứ 3 - 5 - 7</p>
                 <p className={khai_giang_styles}>Thứ 2 - 4 - 6</p> 
                 <p className={khai_giang_styles}>Thứ 2 - 4 - 6</p>
                 <p className={khai_giang_styles}>Thứ 2 - 4 - 6</p>
@@ -151,7 +148,6 @@ export default function Home() {
                 > 
                   Giờ Học
                 </h3>
-                <p className={khai_giang_styles}>19h - 20h30</p>
                 <p className={khai_giang_styles}>21h - 22h30</p>
                 <p className={khai_giang_styles}>19h30 - 21h</p>
                 <p className={khai_giang_styles}>22h30 - 24h</p>
@@ -177,12 +173,6 @@ export default function Home() {
                   </h3>
             </div>
             <div className='flex items-center justify-center flex-col space-y-2 py-1'>
-                <p className={khai_hiang_styles_mobilep}>HSK1 3.0</p>
-                <p className={`${khai_hiang_styles_mobilep}  border-t-1`}>2/6</p>
-                <p className={`${khai_hiang_styles_mobilep}  border-t-1`}>Thứ 3 - 5 - 7</p>
-                <p className={`${khai_hiang_styles_mobilep}  border-t-1`}>19h - 20h30</p>
-            </div>
-            <div className='flex items-center justify-center flex-col space-y-2 py-1'>
                 <p className={`${khai_hiang_styles_mobilep} `}>HSK1 3.0</p>
                 <p className={`${khai_hiang_styles_mobilep}  border-t-1`}>15/6</p>
                 <p className={`${khai_hiang_styles_mobilep}  border-t-1`}>Thứ 2 - 4 - 6</p>
@@ -190,13 +180,13 @@ export default function Home() {
             </div>
             <div className='flex items-center justify-center flex-col space-y-2 py-1'>
                 <p className={`${khai_hiang_styles_mobilep} `}>HSK2 3.0</p>
-                <p className={`${khai_hiang_styles_mobilep}  border-t-1`}>3/6</p>
+                <p className={`${khai_hiang_styles_mobilep}  border-t-1`}>8/6</p>
                 <p className={`${khai_hiang_styles_mobilep}  border-t-1`}>Thứ 2 - 4 - 6</p>
                 <p className={`${khai_hiang_styles_mobilep}  border-t-1`}>19h30 - 21h</p>
             </div>
             <div className='flex items-center justify-center flex-col space-y-2 py-1'>
                 <p className={`${khai_hiang_styles_mobilep}`}>HSK4</p>
-                <p className={`${khai_hiang_styles_mobilep}  border-t-1`}>1/6</p>
+                <p className={`${khai_hiang_styles_mobilep}  border-t-1`}>3/6</p>
                 <p className={`${khai_hiang_styles_mobilep}  border-t-1`}>Thứ 2 - 4 - 6</p>
                 <p className={`${khai_hiang_styles_mobilep}  border-t-1`}>22h30 - 24h</p>
             </div>
